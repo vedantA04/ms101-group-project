@@ -4,13 +4,13 @@
  
  #define Motor11 7
  #define Motor12 6
- #define Motor21 9
+ #define Motor21 12
  #define Motor22 8
  #define PWMmotor1 5
- #define PWMmotor2 10
+ #define PWMmotor2 11
 
- int valuePWM1=120; // speed motor 1 
- int valuePWM2=150; // speed motor 2
+ int valuePWM1=55; // speed motor 1 
+ int valuePWM2=180; // speed motor 2
  
 void setup() {
   
@@ -67,7 +67,7 @@ else if(RIGHT_SENSOR>60 && LEFT_SENSOR>60) //BACK
               digitalWrite(Motor12, HIGH);
               digitalWrite(Motor21, LOW);
               digitalWrite(Motor22, LOW);
-              // delay(10000);
+              delay(1000);
  }
 
 
